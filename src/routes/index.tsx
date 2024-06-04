@@ -1,9 +1,14 @@
-import {createBrowserRouter} from "react-router-dom";
+import { createBrowserRouter } from "react-router-dom";
 import App from "../views/App.tsx";
 
-export const router = createBrowserRouter([
+export const router = createBrowserRouter(
+  [
+    {
+      path: "/",
+      element: <App />,
+    },
+  ],
   {
-    path: '/',
-    element: <App/>
-  }
-])
+    basename: "/react-router-use-blocker-exploration",
+  },
+);
